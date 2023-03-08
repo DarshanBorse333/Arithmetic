@@ -21,7 +21,7 @@ namespace ArithmeticDemo
             Console.WriteLine($"Addition of {num1} and {num2} is = {result}");
         }
 
-        //function complex arguments or parameters 
+        ////function complex arguments or parameters 
 
         public void Sub(Arithmetic arth)
         {
@@ -29,6 +29,8 @@ namespace ArithmeticDemo
             Console.WriteLine($"Substraction of {arth.A} and {arth.B} is = {result}");
         }
 
+
+        //// Output parametre
         public void Mul(int num1, int num2, out int result)
         {
             result = num1 * num2;
