@@ -40,5 +40,50 @@ namespace ArithmeticDemo
         {
             result = num1 / num2;
         }
+
+        ////output formal parameter
+        
+        public void Mul1(int Num1, int Num2, out int result1)
+        {
+            result1 = Num1 * Num2;
+        }
+
+        //// input output parameters / ref
+        
+
+        public void Div1(int a , int b, ref int resultnew)
+        {
+            resultnew = resultnew + b / a;
+        }
+
+        public int Mod(int Num1, int Num2)
+        {
+            int result = Num1 % Num2;
+            return result;
+        }
+
+        public int ArithmeticOperations(int a, int b,out int SubtractionResult, out int MultiplicationResult,
+                                        out int DivisionResult, out int Modresult)
+        {
+            int AdditionResult = a + b;
+            SubtractionResult = a - b;
+            MultiplicationResult = a * b;
+            DivisionResult = a / b;
+            Modresult = a % b;
+
+            return AdditionResult;
+        }
+
+        public int ArithmeticOperations1(int x, int y, out int SubResult, out int MulResult, out int DivResult,
+                                         out int ModResult1)
+        {
+            int AddResult = x + y;
+            SubResult = x - y;
+            MulResult = x * y;
+            DivResult = x / y;
+            ModResult1 = x % y;
+
+            return AddResult;
+        }
     }
 }
